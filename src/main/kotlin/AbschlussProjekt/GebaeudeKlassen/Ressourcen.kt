@@ -1,4 +1,4 @@
-package Classes
+package AbschlussProjekt.GebaeudeKlassen
 
 object Ressourcen  {
 
@@ -11,7 +11,8 @@ object Ressourcen  {
             "Kartoffeln" to 75,
             "Schnaps" to 75,
             "Bauern" to 999999999,
-            "Gold" to 999999999)
+            "Gold" to 999999999
+    )
 
     var aktuelleRessourcen: MutableMap<String, Int> = maxRessourcen.toMutableMap()
     init {
@@ -24,6 +25,5 @@ object Ressourcen  {
             aktuelleRessourcen["Schnaps"] = 0
             aktuelleRessourcen["Bauern"] = 0
             aktuelleRessourcen["Gold"] = 75000
-
     }
 }

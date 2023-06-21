@@ -1,7 +1,8 @@
-package Classes
-import Classes.Ressourcen.aktuelleRessourcen
-import Classes.Ressourcen.maxRessourcen                                                                              // Objekt vererbung aus 13:00 Uhr CP durch Johann
-class Lagerhaus(name: String, baukosten: Pair<String, Int>, goldkosten: Pair<String, Int>, notwendigeBauern: Pair<String,Int>, WartungsKosten: Pair<String, Int>) :Gebäude(name,baukosten,goldkosten, notwendigeBauern){
+package AbschlussProjekt.GebaeudeKlassen
+import AbschlussProjekt.GebaeudeKlassen.Ressourcen.aktuelleRessourcen
+import AbschlussProjekt.GebaeudeKlassen.Ressourcen.maxRessourcen                                                                              // Objekt vererbung aus 13:00 Uhr CP durch Johann
+
+class Lagerhaus(name: String, baukosten: Pair<String, Int>, goldkosten: Pair<String, Int>, notwendigeBauern: Pair<String,Int>,) : Gebaeude(name,baukosten,goldkosten, notwendigeBauern){
 
 
 
