@@ -13,28 +13,25 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
 
             "Bauernhaus" -> {
 
-                baukosten = "Bretter" to 2
-                notwendigeBauern = "Bauern" to 10
+                baukosten = "Bretter" to 5
 
                 if (deineGebaeude["Marktplatz"] != null){
                     if (aktuelleRessourcen["Bretter"]!! >= baukosten.second) {
                         aktuelleRessourcen["Bretter"] = aktuelleRessourcen["Bretter"]!! - baukosten.second
-                        aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! + notwendigeBauern.second
                         println("Bauernhaus wurde errichtet.")
                         deineGebaeude[gebaeudeName] = deineGebaeude.getOrDefault(gebaeudeName, 0) + 1
                     } else {
-                        println("Du hast nicht genügend Bretter um ein bauernhaus zu errrichten.")
+                        println("Du hast nicht genügend Bretter um ein bauernhaus zu errichten.")
                     }
                 } else {
                     println("Du musst zuerst einen Marktplatz errichten.")
                 }
-                return "Bauernhaus"
             }
 
             "Holzfällerhütte" -> {
 
-                goldkosten = "Gold" to 100
-                notwendigeBauern = "Bauern" to 5
+                goldkosten = "Gold" to 500
+                notwendigeBauern = "Bauern" to 10
 
                 if (aktuelleRessourcen["Bauern"]!! >= notwendigeBauern.second ) {
                     aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - notwendigeBauern.second
@@ -46,15 +43,14 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                         println("Du hast nicht genügend Gold um eine Holzfällerhütte zu errichten.")
                     }
                 } else {
-                    println("Du hast nicht genug Bauern um die Holzfällerhütte zu betreiben")
+                    println("Du hast nicht genug Bauern um die Holzfällerhütte zu betreiben. Baue zuerst Bauernhäuser, damit Bauern einziehen können.")
                 }
-                return "Holzfällerhütte"
             }
 
             "Sägewerk" -> {
 
-                goldkosten = "Gold" to 100
-                notwendigeBauern = "Bauern" to 10
+                goldkosten = "Gold" to 1000
+                notwendigeBauern = "Bauern" to 15
 
                 if (aktuelleRessourcen["Bauern"]!! >= notwendigeBauern.second) {
                     aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - notwendigeBauern.second
@@ -66,16 +62,15 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                         println("Du hast nicht genügend Gold um ein Sägewerk zu errichten.")
                     }
                 } else {
-                    println("Du hast nicht genug Bauern um das Sägewerk zu betreiben")
+                    println("Du hast nicht genug Bauern um das Sägewerk zu betreiben. Baue zuerst Bauernhäuser, damit Bauern einziehen können.")
                 }
-                return "Sägewerk"
             }
 
             "Fischerei" -> {
 
-                goldkosten = "Gold" to 100
-                baukosten = "Bretter" to 2
-                notwendigeBauern = "Bauern" to 25
+                goldkosten = "Gold" to 1000
+                baukosten = "Bretter" to 10
+                notwendigeBauern = "Bauern" to 30
 
                 if (aktuelleRessourcen["Bauern"]!! >= notwendigeBauern.second){
                     aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - notwendigeBauern.second
@@ -92,16 +87,15 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                         println("Du hast nicht genügend Gold um eine Fischerei zu errichten.")
                     }
                 } else {
-                    println("Du hast nicht genug Bauern um die Fischerei zu betreiben.")
+                    println("Du hast nicht genug Bauern um die Fischerei zu betreiben. Baue zuerst Bauernhäuser, damit Bauern einziehen können.")
                 }
-                return "Fischerei"
             }
 
             "Schäferei" -> {
 
-                goldkosten = "Gold" to 100
-                baukosten = "Bretter" to 2
-                notwendigeBauern = "Bauern" to 10
+                goldkosten = "Gold" to 1000
+                baukosten = "Bretter" to 10
+                notwendigeBauern = "Bauern" to 15
 
                 if (aktuelleRessourcen["Bauern"]!! >= notwendigeBauern.second){
                     aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - notwendigeBauern.second
@@ -118,15 +112,14 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                         println("Du hast nicht genügend Bretter um eine Schäferei zu errichten.")
                     }
                 } else {
-                    println("Du hast nicht genug Bauern um die Schäferei zu betreiben.")
+                    println("Du hast nicht genug Bauern um die Schäferei zu betreiben. Baue zuerst Bauernhäuser, damit Bauern einziehen können.")
                 }
-                return "Schäferei"
             }
 
             "Weberei" -> {
 
-                goldkosten = "Gold" to 400
-                baukosten = "Bretter" to 2
+                goldkosten = "Gold" to 2000
+                baukosten = "Bretter" to 10
                 notwendigeBauern = "Bauern" to 50
 
                 if (aktuelleRessourcen["Bauern"]!! >= notwendigeBauern.second) {
@@ -144,15 +137,14 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                         println("Du hast nicht genügend Bretter um eine Weberei zu errichten.")
                     }
                 } else {
-                    println("Du hast nicht genug Bauern um die Weberei zu betreiben.")
+                    println("Du hast nicht genug Bauern um die Weberei zu betreiben. Baue zuerst Bauernhäuser, damit Bauern einziehen können.")
                 }
-                return "Weberei"
             }
 
             "Kartoffelhof" -> {
 
-                goldkosten = "Gold" to 100
-                baukosten = "Bretter" to 2
+                goldkosten = "Gold" to 1000
+                baukosten = "Bretter" to 10
                 notwendigeBauern = "Bauern" to 25
 
                 if (aktuelleRessourcen["Bauern"]!! >= notwendigeBauern.second){
@@ -170,15 +162,14 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                         println("Du hast nicht genügend Bretter um ein Kartoffelhof zu errichten.")
                     }
                 } else {
-                    println("Du hast nicht genug Bauern um das Kartoffelhof zu betreiben.")
+                    println("Du hast nicht genug Bauern um das Kartoffelhof zu betreiben. Baue zuerst Bauernhäuser, damit Bauern einziehen können.")
                 }
-                return "Kartoffelhof"
             }
 
             "Schnapsbrennerei" -> {
 
-                goldkosten = "Gold" to 100
-                baukosten = "Bretter" to 2
+                goldkosten = "Gold" to 5000
+                baukosten = "Bretter" to 20
                 notwendigeBauern = "Bauern" to 50
 
                 if (aktuelleRessourcen["Bauern"]!! >= notwendigeBauern.second){
@@ -196,15 +187,14 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                         println("Du hast nicht genügend Bretter um eine Schnapsbrennerei zu errichten.")
                     }
                 } else {
-                    println("Du hast nicht genug Bauern um das Kartoffelhof zu betreiben.")
+                    println("Du hast nicht genug Bauern um das Kartoffelhof zu betreiben. Baue zuerst Bauernhäuser, damit Bauern einziehen können.")
                 }
-                return "Schnapsbrennerei"
             }
 
             "Lagerhaus" -> {
 
-                goldkosten = "Gold" to 500
-                baukosten = "Bretter" to 10
+                goldkosten = "Gold" to 2000
+                baukosten = "Bretter" to 20
 
                 if (aktuelleRessourcen["Bretter"]!! >= baukosten.second) {
                     aktuelleRessourcen["Bretter"] = aktuelleRessourcen["Bretter"]!! - baukosten.second
@@ -218,13 +208,12 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                 } else {
                     println("Du hast nicht genügend Bretter um ein Lagerhaus zu errichten.")
                 }
-                return "Lagerhaus"
             }
 
             "Marktplatz" -> {
 
-                goldkosten = "Gold" to 500
-                baukosten = "Bretter" to 10
+                goldkosten = "Gold" to 1500
+                baukosten = "Bretter" to 15
 
                 if (aktuelleRessourcen["Bretter"]!! >= baukosten.second) {
                     aktuelleRessourcen["Bretter"] = aktuelleRessourcen["Bretter"]!! - baukosten.second
@@ -238,7 +227,6 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                 } else {
                     println("Du hast nicht genügend Bretter um ein Marktplatz zu errichten.")
                 }
-                return "Marktplatz"
             }
 
             "Königspalast" -> {
@@ -262,9 +250,8 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                         println("Du hast nicht genügend Bretter um ein Königspalast zu errichten.")
                     }
                 } else {
-                    println("Du hast nicht genug Bauern um den König Zufrieden zu stellen")
+                    println("Du hast nicht genug Bauern um den König Zufrieden zu stellen. Baue zuerst Bauernhäuser, damit Bauern einziehen können.")
                 }
-                return "Königspalast"
             }
         }
         return ""
