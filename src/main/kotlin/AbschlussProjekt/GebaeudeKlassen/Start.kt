@@ -90,7 +90,193 @@ class Start(){
         println("Hier deine Aktuellen Ressourcen: $aktuelleRessourcen")
         println()
         println("Gebe nun den Namen des Gebäudes ein, dass du errichten möchtest.")
-        userBaubefehl(readln())
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+        println(aktuelleRessourcen)
+        println(deineGebaeude)
+        println("Welches Gebäude möchtest du errichten ?")
+        userBaubefehl(readln = "")
+        println()
+
+
+
+
+
     }
 
     fun userBaubefehl(readln: String) {
@@ -98,12 +284,11 @@ class Start(){
         when (readln()) {
 
             "Marktplatz" -> {
-
+                marktplatz.build(aktuelleRessourcen, deineGebaeude)
             }
 
             "Bauernhaus" -> {
                 bauernhaus.build(aktuelleRessourcen, deineGebaeude)
-                bauernhaus.bevoelkerungszuwachs()
             }
 
             "Lagerhaus" -> {
@@ -112,46 +297,47 @@ class Start(){
 
             "Holzfällerhütte" -> {
                 holz.build(aktuelleRessourcen, deineGebaeude)
-                holz.produktion()
             }
 
             "Sägewerk" -> {
                 brett.build(aktuelleRessourcen, deineGebaeude)
-                brett.produktion()
             }
 
             "Fischerei" -> {
                 fisch.build(aktuelleRessourcen, deineGebaeude)
-                fisch.produktion()
             }
 
             "Schäferei" -> {
                 schaf.build(aktuelleRessourcen, deineGebaeude)
-                schaf.produktion()
             }
 
             "Weberei" -> {
                 kleidung.build(aktuelleRessourcen, deineGebaeude)
-                kleidung.produktion()
             }
 
             "Kartoffelhof" -> {
                 kartoffeln.build(aktuelleRessourcen, deineGebaeude)
-                kartoffeln.produktion()
             }
 
             "Schnapsbrennerei" -> {
                 schnaps.build(aktuelleRessourcen, deineGebaeude)
-                schnaps.produktion()
             }
 
             "Königspalast" -> {
                 koenig.build(aktuelleRessourcen, deineGebaeude)
+                if (deineGebaeude["Königspalast"] != null){
+                    koenig.siegesbedingung()
+                    spielbeginn()
+                }
             }
 
             else -> {
-                println("Bitte gebe erneut ein.")
-                userBaubefehl(readln())
+                try {
+                    Gebaeude("", "" to 0, "" to 0, "" to 0).build(aktuelleRessourcen, deineGebaeude)
+                } catch (e: Exception) {
+                        println("Fehler: " + e.message)
+                }
+                userBaubefehl(readln = "")
             }
         }
     }

@@ -7,7 +7,7 @@ class Lagerhaus(name: String, baukosten: Pair<String, Int>, goldkosten: Pair<Str
 
 
 
-    private fun istLagerVoll() :Boolean {
+    /*private fun istLagerVoll() :Boolean {
         for ((ressourcen, höchstwert) in maxRessourcen){
             var vorhandeneRessorcen = aktuelleRessourcen[ressourcen]
             if (vorhandeneRessorcen != höchstwert){
@@ -39,5 +39,5 @@ class Lagerhaus(name: String, baukosten: Pair<String, Int>, goldkosten: Pair<Str
         if (istLagerVoll()){
             println("Die Produktion kommt zum stop.")
         }
-    }
+    }*/
 }

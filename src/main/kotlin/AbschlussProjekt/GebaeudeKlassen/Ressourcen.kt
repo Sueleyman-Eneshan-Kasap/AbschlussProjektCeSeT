@@ -17,7 +17,7 @@ object Ressourcen  {
     var aktuelleRessourcen: MutableMap<String, Int> = maxRessourcen.toMutableMap()
     init {
             aktuelleRessourcen["Holz"] = 0
-            aktuelleRessourcen["Bretter"] = 25
+            aktuelleRessourcen["Bretter"] = 30
             aktuelleRessourcen["Fisch"] = 0
             aktuelleRessourcen["Wolle"] = 0
             aktuelleRessourcen["Arbeitskleidung"] = 0

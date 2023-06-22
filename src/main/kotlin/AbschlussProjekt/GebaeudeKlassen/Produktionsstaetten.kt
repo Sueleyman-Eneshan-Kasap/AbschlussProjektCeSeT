@@ -5,13 +5,13 @@ import AbschlussProjekt.GebaeudeKlassen.Ressourcen.maxRessourcen
 class Produktionsstaetten(name: String, baukosten: Pair<String, Int>, notwendigeBauern: Pair<String,Int>, goldkosten: Pair<String, Int>, var aktuelleRessourcen: MutableMap<String, Int> ) : Gebaeude(name,baukosten,goldkosten,notwendigeBauern){
 
 
-    var zeitAufwand: Int = 0
+    /*var zeitAufwand: Int = 0
 
 
 
     fun produktion(){
 
-        if (gebaeudeName == "Holzfällerhütte" && notwendigeBauern.second == 10) {
+        if (gebaeudeName == "Holzfällerhütte") {
             zeitAufwand = 0
             for (i in 1.. 30){
                 zeitAufwand++
@@ -23,13 +23,9 @@ class Produktionsstaetten(name: String, baukosten: Pair<String, Int>, notwendige
                     }
                 }
             }
-            if (aktuelleRessourcen["Bauern"]!! >= 5) {
-                aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - 10
-            }
         }
 
-
-        if (gebaeudeName == "Sägewerk" && aktuelleRessourcen["Bauern"] == 15) {
+        if (gebaeudeName == "Sägewerk") {
             zeitAufwand = 0
             for (i in 1..30) {
                 zeitAufwand++
@@ -39,12 +35,9 @@ class Produktionsstaetten(name: String, baukosten: Pair<String, Int>, notwendige
                     produktion()
                 }
             }
-            if (aktuelleRessourcen["Bauern"]!! >= 10) {
-                aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - 15
-            }
         }
 
-        if (gebaeudeName == "Fischerei" && notwendigeBauern.second == 30) {
+        if (gebaeudeName == "Fischerei") {
             zeitAufwand = 0
             for (i in 1..50) {
                 zeitAufwand++
@@ -54,11 +47,9 @@ class Produktionsstaetten(name: String, baukosten: Pair<String, Int>, notwendige
                     produktion()
                 }
             }
-            if (aktuelleRessourcen["Bauern"]!! >= 25) {
-                aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - 30
-            }
         }
-        if (gebaeudeName == "Schäferei" && notwendigeBauern.second == 15) {
+
+        if (gebaeudeName == "Schäferei") {
             zeitAufwand = 0
             for (i in 1..30) {
                 zeitAufwand++
@@ -68,11 +59,9 @@ class Produktionsstaetten(name: String, baukosten: Pair<String, Int>, notwendige
                     produktion()
                 }
             }
-            if (aktuelleRessourcen["Bauern"]!! >= 10) {
-                aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - 15
-            }
         }
-        if (gebaeudeName == "Weberei" && notwendigeBauern.second == 50) {
+
+        if (gebaeudeName == "Weberei") {
             zeitAufwand = 0
             for (i in 1..30) {
                 zeitAufwand++
@@ -82,11 +71,9 @@ class Produktionsstaetten(name: String, baukosten: Pair<String, Int>, notwendige
                     produktion()
                 }
             }
-            if (aktuelleRessourcen["Bauern"]!! >= 50) {
-                aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - 50
-            }
         }
-        if (gebaeudeName == "Kartoffelhof" && notwendigeBauern.second == 25) {
+
+        if (gebaeudeName == "Kartoffelhof") {
             zeitAufwand = 0
             for (i in 1..30) {
                 zeitAufwand++
@@ -96,11 +83,9 @@ class Produktionsstaetten(name: String, baukosten: Pair<String, Int>, notwendige
                     produktion()
                 }
             }
-            if (aktuelleRessourcen["Bauern"]!! >= 25) {
-                aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - 25
-            }
         }
-        if (gebaeudeName == "Schnapsbrennerei" && notwendigeBauern.second == 50) {
+
+        if (gebaeudeName == "Schnapsbrennerei") {
             zeitAufwand = 0
             for (i in 1..30) {
                 zeitAufwand++
@@ -110,9 +95,6 @@ class Produktionsstaetten(name: String, baukosten: Pair<String, Int>, notwendige
                     produktion()
                 }
             }
-            if (aktuelleRessourcen["Bauern"]!! >= 50) {
-                aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - 50
-            }
         }
-    }
+    }*/
 }
