@@ -1,43 +1,43 @@
 package AbschlussProjekt.GebaeudeKlassen
 
-open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair<String, Int>, notwendigeBauern: Pair<String, Int>) {
+open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair<String, Int>, notwendigeBauern: Pair<String, Int>) {               // Das ist meine Superklasse von der ich über den Primären Konstruktor einige Eigenschaften weitervererbe.
 
-    var gebaeudeName: String = name
-    var baukosten = baukosten
-    var goldkosten = goldkosten
-    var notwendigeBauern = notwendigeBauern
+    var gebaeudeName: String = name                                                                                                                 //
+    var baukosten = baukosten                                                                                                                       //
+    var goldkosten = goldkosten                                                                                                                     //
+    var notwendigeBauern = notwendigeBauern                                                                                                         // Hier definiere ich mit variablen neue und zutreffendere Namen für meine Eigenschaften.
 
-    fun build(aktuelleRessourcen: MutableMap<String, Int>, deineGebaeude: MutableMap<String, Int>):String {
+    fun build(aktuelleRessourcen: MutableMap<String, Int>, deineGebaeude: MutableMap<String, Int>):String {                                         // Das ist meine Methode, mit der ich jeweiliges Gebäude erstellen kann. Sie nutzt meine Ressourcen und Gebäude Maps als Parameter und hat eine String als Rückgabewert.
 
-        when (gebaeudeName) {
+        when (gebaeudeName) {                                                                                                                       // Hier beginnt meine when verzweigung. Wenn also Gebäudename, dann (folgende Kommentare lesen)...
 
-            "Bauernhaus" -> {
+            "Bauernhaus" -> {                                                                                                                       // Wenn also der Gebäudename der eingabe, in dem Fall Bauernhaus ist, dann soll der Schleifeninhalt je nach bedingung ablaufen.
 
-                baukosten = "Bretter" to 5
+                baukosten = "Bretter" to 5                                                                                                          // Hier Definiere ich meine Baukosten.
 
-                if (deineGebaeude["Marktplatz"] != null){
+                if (deineGebaeude["Marktplatz"] != null){                                                                                           // Falls also in meiner Map der key Marktplatz vorhanden ist, wird man gefragt, wieviele Bauernhäuser gebaut werden sollen.
                     println("Wieviele Bauernhäuser möchtest du errichten ?")
 
-                    var bauernhaeuserMenge = readln().toInt()
-                    var kosten = bauernhaeuserMenge * baukosten.second
+                    var bauernhaeuserMenge = readln().toInt()                                                                                       // Hier definiere ich eine neue Variable, um die eingabe der Anzahl für die zu bauenden Bauernhäuser mit einer readln() festzuhalten
+                    var kosten = bauernhaeuserMenge * baukosten.second                                                                              // Hier definiere ich eine weitere Variable, um die gesamtkosten für die jeweilige anzahl der zu bauenden Bauernhäuser zu ermitteln. baukosten.second wird verwendet, um den zweiten Wert aus meinem baukosten paar zu verwenden.
 
-                    if (aktuelleRessourcen["Bretter"]!! >= kosten) {
-                        aktuelleRessourcen["Bretter"] = aktuelleRessourcen["Bretter"]!! - kosten
-                        aktuelleRessourcen["Gold"] = aktuelleRessourcen["Gold"]!! + bauernhaeuserMenge * 1000
-                        println("$bauernhaeuserMenge Gebäude errichtet.")
+                    if (aktuelleRessourcen["Bretter"]!! >= kosten) {                                                                                // Nun stelle ich eine weitere bedingung, in der ich sage, falls Bretter, die 100 % in meiner Map sind, und ihr wert größer gleich der kosten die entstehen sind, der schleifen inhalt ausgeführt werden soll.
+                        aktuelleRessourcen["Bretter"] = aktuelleRessourcen["Bretter"]!! - kosten                                                    // Hier bekam ich hilfe von Pavel meinem Tutor. Jetzt wird der neue wert für Bretter beim Erstellen von Bauernhaus festgelegt. Es werden die Kosten für den Bau von Bauernhaus aud der ressourcen Map Subtrahiert.
+                        aktuelleRessourcen["Gold"] = aktuelleRessourcen["Gold"]!! + bauernhaeuserMenge * 1000                                       // Hier definiere ich, dass jedes Bauernhaus Gold generiert (In dem fall 1000 Pro Bauernhaus) und diese beim Bau der Ressourcen Map hinzufügt.
+                        println("$bauernhaeuserMenge Gebäude errichtet.")                                                                           // printline zu ausgabe wieviele neue gebäude errichtet wurden.
 
-                        var neueBauern = bauernhaeuserMenge * 15
-                        aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! + neueBauern
-                        println("Deine Bevölkerung ist um $neueBauern Bauern gewachsen.")
-                        deineGebaeude[gebaeudeName] = deineGebaeude.getOrDefault(gebaeudeName, 0) + bauernhaeuserMenge
+                        var neueBauern = bauernhaeuserMenge * 15                                                                                    // neue Variable für Anzahl der Bauern, die neu generiert werden, Pro Bauernhaus das gebaut wird.
+                        aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! + neueBauern                                                  // Hinzufügen der neuen Bauern zu Ressourcen Map.
+                        println("Deine Bevölkerung ist um $neueBauern Bauern gewachsen.")                                                           // Printline zur ausgabe um wieviele Bauern die Bevölkerung gewachsen ist.
+                        deineGebaeude[gebaeudeName] = deineGebaeude.getOrDefault(gebaeudeName, 0) + bauernhaeuserMenge                   // Hierfür habe ich Chat Gpt genutzt (getOrDefault), der Code fügt gebaute Gebäude der deineGebäude Map hinzu.
                     } else {
-                        println("Du hast nicht genügend Bretter um ein bauernhaus zu errichten.")
+                        println("Du hast nicht genügend Bretter um ein bauernhaus zu errichten.")                                                   // das ist meine else ausgabe, dafür das nicht genügend ressourcen verfügbar sind zum bauen.
                         }
                 } else {
-                    println("Du musst zuerst einen Marktplatz errichten.")
+                    println("Du musst zuerst einen Marktplatz errichten.")                                                                          // das ist die ausgabe dafür das zuerst ein marktplatz errichtet werden muss da die bedingung nicht erfüült wird.
                 }
             }
-
+                                                                                                                                                    // der rest meines Codes baut auf denselben prinzipien auf. Bis auf weiter unten im Code.
             "Holzfällerhütte" -> {
 
                 goldkosten = "Gold" to 500
@@ -319,7 +319,7 @@ open class Gebaeude(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
                 baukosten = "Bretter" to 50
                 notwendigeBauern = "Bauern" to 1000
 
-                if (deineGebaeude["Holzfällerhütte"] != null && deineGebaeude["Sägewerk"] != null && deineGebaeude["Fischerei"] != null && deineGebaeude["Schäferei"] != null &&
+                if (deineGebaeude["Holzfällerhütte"] != null && deineGebaeude["Sägewerk"] != null && deineGebaeude["Fischerei"] != null && deineGebaeude["Schäferei"] != null &&                // Hier stelle ich mit dem Und && Operator gleich mehrere bedingungen und lege fest das mehrere gebäude bereits gebaut sein müssen, um dass Königspalast zu errichten.
                     deineGebaeude["Weberei"] != null && deineGebaeude["Kartoffelhof"] != null && deineGebaeude["Schnapsbrennerei"] != null)
                     if (aktuelleRessourcen["Bauern"]!! >= notwendigeBauern.second) {
                         aktuelleRessourcen["Bauern"] = aktuelleRessourcen["Bauern"]!! - notwendigeBauern.second

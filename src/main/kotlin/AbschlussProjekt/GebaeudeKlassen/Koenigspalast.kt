@@ -12,5 +12,6 @@ class Koenigspalast(name: String, baukosten: Pair<String, Int>, goldkosten: Pair
     }
 }
 
+// Das ist meine Unterklasse Königspalast. hier Definiere ich zusätzlich eine Methode für die Siegesbedingung mit der Ich das Spiel gewinnen kann.
 
 

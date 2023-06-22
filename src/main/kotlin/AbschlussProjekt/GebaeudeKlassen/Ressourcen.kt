@@ -27,3 +27,7 @@ object Ressourcen  {
             aktuelleRessourcen["Gold"] = 75000
     }
 }
+
+
+// Hier definiere ich eine Map mit der begrenzun zur Maximalen anzahl der ressourcen, die man haben kann.
+// Anschließend konvertiere ich die Max resourcen zu einer Mutablen map die ich als die aktuellen ressourcen definiere und nutzen kann.

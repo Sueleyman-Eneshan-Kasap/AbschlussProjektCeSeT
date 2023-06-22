@@ -15,6 +15,8 @@ val kartoffeln = Produktionsstaetten("Kartoffelhof", "Bretter" to 10, "Bauern" t
 val schnaps = Produktionsstaetten("Schnapsbrennerei", "Bretter" to 20, "Bauern" to 50, "Gold" to 5000, aktuelleRessourcen)
 val koenig = Koenigspalast("Königspalast", "Bretter" to 50, "Gold" to 50000, "Bauern" to 1000,aktuelleRessourcen)
 
+// Oben Habe ich meine Gebäude anhand der Parameter Instanziert.
+
 class Start(){
 
     fun spielbeginn(){
@@ -34,7 +36,7 @@ class Start(){
             3 -> spielStart()
         }
 
-    }
+    }  // Das ist meine Methode zum Menü aufbau
 
     fun ziel(){
 
@@ -49,7 +51,7 @@ class Start(){
         when (x){
             x -> spielbeginn()
         }
-    }
+    } // Das ist meine Methode das Ziel des Spieles etwas näher zu erläutern
 
     fun preisAuflistung(){
 
@@ -72,7 +74,7 @@ class Start(){
         when (x){
             x -> spielbeginn()
         }
-    }
+    } // Das ist meine Methode in der ich Baumöglichkeiten und ihre Kosten aufliste.
 
     fun spielStart(){
 
@@ -101,12 +103,7 @@ class Start(){
             userBaubefehl(readln = "")
             println()
         }
-
-
-
-
-
-    }
+    } // Das ist meine Methode für spielbeginn und Spiel durchlauf
 
     fun userBaubefehl(readln: String) {
 
@@ -161,7 +158,6 @@ class Start(){
                     Thread.sleep(2500)
                     spielbeginn()
                 }
-
             }
 
             else -> {
@@ -173,5 +169,5 @@ class Start(){
                 userBaubefehl(readln = "")
             }
         }
-    }
+    } // Hier definiere ich was Passieren soll nach jeweiliger Usereingabe
 }
