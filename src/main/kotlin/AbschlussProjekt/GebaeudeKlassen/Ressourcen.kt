@@ -3,13 +3,13 @@ package AbschlussProjekt.GebaeudeKlassen
 object Ressourcen  {
 
     var maxRessourcen: Map<String, Int> = mapOf(
-            "Holz" to 75,
-            "Bretter" to 75,
-            "Fisch" to 75,
-            "Wolle" to 75,
-            "Arbeitskleidung" to 75,
-            "Kartoffeln" to 75,
-            "Schnaps" to 75,
+            "Holz" to 1000,
+            "Bretter" to 1000,
+            "Fisch" to 1000,
+            "Wolle" to 1000,
+            "Arbeitskleidung" to 1000,
+            "Kartoffeln" to 1000,
+            "Schnaps" to 1000,
             "Bauern" to 999999999,
             "Gold" to 999999999
     )
@@ -17,7 +17,7 @@ object Ressourcen  {
     var aktuelleRessourcen: MutableMap<String, Int> = maxRessourcen.toMutableMap()
     init {
             aktuelleRessourcen["Holz"] = 0
-            aktuelleRessourcen["Bretter"] = 30
+            aktuelleRessourcen["Bretter"] = 50
             aktuelleRessourcen["Fisch"] = 0
             aktuelleRessourcen["Wolle"] = 0
             aktuelleRessourcen["Arbeitskleidung"] = 0
